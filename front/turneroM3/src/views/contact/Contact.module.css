@@ -1,0 +1,21 @@
+.mainContainer {
+    margin-top: 130px;
+}
+
+.contactPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contactPage h1 {
+    color: #344E41;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .map {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  

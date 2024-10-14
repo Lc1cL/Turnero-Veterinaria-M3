@@ -1,0 +1,29 @@
+.welcome {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #344E41;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .welcome h1 {
+    color: #a8d5ba;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .welcome img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

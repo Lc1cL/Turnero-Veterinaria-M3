@@ -1,0 +1,35 @@
+.container {
+    background-color: #fcd49f;
+    color:#847f6c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    span {
+        flex: 25% 0 25%;
+    }
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+
+.active{
+    color: #577135;
+    width: 10%;
+    height:30px;
+    text-align: center;
+    &:hover{
+        color: #ffffff;
+        background-color: #658e36;
+        cursor: pointer;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+.cancelled{
+    color: rgb(105, 16, 16);
+}

@@ -1,0 +1,4 @@
+.mainContainer {
+    margin-top: 200px; /* Ajusta el valor según sea necesario para evitar que el NavBar se superponga */
+    text-align: center;
+}

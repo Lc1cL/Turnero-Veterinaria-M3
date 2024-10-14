@@ -1,0 +1,18 @@
+.mainContainer {
+    text-align: center;
+    margin-top: 150px; 
+}
+
+.boton {
+    background-color: #a8d5ba;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .boton:hover{
+    background-color: #344e41;
+}

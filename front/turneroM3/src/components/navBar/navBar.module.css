@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Fuente de estilo pixelado */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('https://i.ibb.co/vkkdTKj/fondo-patitas.jpg') no-repeat center center fixed;; /* Fondo para probar visibilidad */
+    background-size:cover;
+}
+
+.navbar  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a8d5ba; /* Color verde pastel oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 90px;
+    border-radius: 45px; 
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%; /* Ajusta el ancho para controlar la distribución */
+    margin-right: 300px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #344E41;
+    transform: scale(1.1);
+}
+
+.navLinks a span {
+    display: inline-block;
+    position: relative;
+}
+
+.navLinks a span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #344E41; /* Color verde pastel muy oscuro */
+    transition: width 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.navLinks a:hover span::after {
+    width: 100%;
+    left: 0;
+    background: #344E41; /* Color verde pastel muy oscuro */
+}
