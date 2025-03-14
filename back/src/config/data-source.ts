@@ -9,7 +9,7 @@ export const AppDataSource = new DataSource({
     type: "postgres",
     host: DB_HOST,
     port: Number(DB_PORT),
-    username: DB_USER,   // Consultar con Ariel
+    username: DB_USER,
     password: DB_PASSWORD,
     database:  DB_NAME,
     synchronize: false,
@@ -18,4 +18,7 @@ export const AppDataSource = new DataSource({
     entities: [User, Turno, Credentials],
     subscribers: [],
     migrations: [],
+    // ssl: {
+    //     rejectUnauthorized: false,
+    //   },
 })
