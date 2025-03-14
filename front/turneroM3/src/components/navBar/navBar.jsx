@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.css"; // Importa el archivo CSS como un módulo
 import { useDispatch, useSelector } from "react-redux";
-import setUserData from "../../redux/userSlice";
+import { setUserData } from "../../redux/userSlice";
 
 const NavBar = () => {
   const { pathname } = useLocation();
