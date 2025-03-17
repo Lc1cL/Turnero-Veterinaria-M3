@@ -3,7 +3,7 @@ import axios from "axios";
 import validateUser from "./ValidateRegister";
 import styles from "./Register.module.css";
 
-const URLREGISTERPOST = "http://localhost:3000/users/register";
+const URLREGISTERPOST = "https://turnero-veterinaria-m3-server.vercel.app/users/register";
 
 const Register = () => {
   const initialState = {

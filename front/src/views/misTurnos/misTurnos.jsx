@@ -6,8 +6,8 @@ import { setTurnosUsuario } from "../../redux/userSlice";
 import styles from "./misTurnos.module.css";
 import TarjetaTurno from "../../components/tarjetasTurnos/tarjetaTurno";
 
-const GETUSERBYID = "http://localhost:3000/users/";
-const PUTCANCELTURNO = "http://localhost:3000/turnos/cancel/";
+const GETUSERBYID = "https://turnero-veterinaria-m3-server.vercel.app/users/";
+const PUTCANCELTURNO = "https://turnero-veterinaria-m3-server.vercel.app/turnos/cancel/";
 
 const MisTurnos = () => {
   const actualUserId = useSelector(

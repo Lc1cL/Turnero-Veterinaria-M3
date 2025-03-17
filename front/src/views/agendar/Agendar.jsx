@@ -4,7 +4,7 @@ import styles from "./Agendar.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const POSTTURNOURL = "http://localhost:3000/turnos/agendar";
+const POSTTURNOURL = "https://turnero-veterinaria-m3-server.vercel.app/turnos/agendar";
 
 export default function Agendar(props) {
   const navigate = useNavigate();
