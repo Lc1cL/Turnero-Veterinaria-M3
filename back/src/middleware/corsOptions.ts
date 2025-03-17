@@ -1,4 +1,4 @@
 export const corsOptions= {
-    origin: 'http://localhost:3001',
+    origin: 'https://turnero-veterinaria-m3.vercel.app',
     optionSuccessStatus: 200
 }
