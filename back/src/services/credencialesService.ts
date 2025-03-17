@@ -1,5 +1,5 @@
 import ICrearCredencialesDto from "../dto/ICrearCredencialesDto";
-import Credentials from "../entities/Credentials";
+import Credentials from "../entities/Credentials.entity";
 import {credentialModel} from "../repositories/index"
 import IValidateCredentialsDto from "../dto/IValidateCredentialsDto";
 

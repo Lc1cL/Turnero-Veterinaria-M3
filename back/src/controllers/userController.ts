@@ -3,8 +3,8 @@ import { getUsersService, createUserService, getUserByIdService, findUserByCrede
 import ICrearCredencialesDto from "../dto/ICrearCredencialesDto";
 import ICrearUserDto from "../dto/UserDto";
 import { validateCredential } from "../services/credencialesService";
-import User from "../entities/User";
-import Credentials from "../entities/Credentials";
+import User from "../entities/User.entity";
+import Credentials from "../entities/Credentials.entity";
 import ICredenciales from "../interfaces/ICredenciales";
 
 export const createUser = async (req: Request<{},{},ICrearUserDto>, res : Response) => {

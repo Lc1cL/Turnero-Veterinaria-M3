@@ -1,6 +1,6 @@
 import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import Credentials from "./Credentials";
-import Turno from "./Turno";
+import Credentials from "./Credentials.entity";
+import Turno from "./Turno.entity";
 
 @Entity({name: "users"}) 
 class User {

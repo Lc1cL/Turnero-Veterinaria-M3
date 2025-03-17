@@ -1,6 +1,6 @@
 import ICrearUserDto from "../dto/UserDto";
-import Credentials from "../entities/Credentials";
-import User from "../entities/User";
+import Credentials from "../entities/Credentials.entity";
+import User from "../entities/User.entity";
 import { userModel } from "../repositories";
 import { createCredential } from "./credencialesService";
 

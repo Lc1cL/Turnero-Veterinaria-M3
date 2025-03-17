@@ -1,7 +1,7 @@
 import { AppDataSource } from "../config/data-source";
-import Credentials from "../entities/Credentials";
-import Turno from "../entities/Turno";
-import User from "../entities/User";
+import Credentials from "../entities/Credentials.entity";
+import Turno from "../entities/Turno.entity";
+import User from "../entities/User.entity";
 
 export const credentialModel = AppDataSource.getRepository(Credentials);
 

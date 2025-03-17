@@ -1,5 +1,5 @@
 import ICrearTurnoDto from "../dto/ICrearTurnoDto";
-import Turno from "../entities/Turno";
+import Turno from "../entities/Turno.entity";
 import { getTurnosService, agendarTurnoService, cancelarTurnoService, getTurnoByIdService } from "../services/turnoService";
 import { Request, Response } from "express";
 

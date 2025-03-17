@@ -1,6 +1,6 @@
 import ICrearTurnoDto from "../dto/ICrearTurnoDto";
-import Turno from "../entities/Turno";
-import User from "../entities/User";
+import Turno from "../entities/Turno.entity";
+import User from "../entities/User.entity";
 import { turnoModel, userModel } from "../repositories";
 
 ///////// Implementar una función que pueda retornar el arreglo completo de turnos.

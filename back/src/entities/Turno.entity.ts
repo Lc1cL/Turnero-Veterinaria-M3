@@ -1,5 +1,5 @@
 import { Column, Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import User from "./User";
+import User from "./User.entity";
 
 
 @Entity ({ name: "turnos"}) class Turno {
