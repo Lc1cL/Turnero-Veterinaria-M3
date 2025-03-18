@@ -13,9 +13,7 @@ export const createUser = async (req: Request<{},{},ICrearUserDto>, res : Respon
     const {name, email, birthdate, nDni, username, pass } = req.body;
     const newUser : User = await createUserService({name, email, birthdate, nDni, username, pass });  // queda el newUser sin uso pero con el usuario construido y grabado en la BBDD
     
-    const shownUser : Omit<typeof newUser, "credential"> = {
-        ...newUser,
-    }
+    const { credential, ...shownUser } = newUser;
 
     console.log("User created successfully")
 
