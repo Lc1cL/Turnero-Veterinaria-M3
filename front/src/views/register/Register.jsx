@@ -2,8 +2,11 @@ import { useState } from "react";
 import axios from "axios";
 import validateUser from "./ValidateRegister";
 import styles from "./Register.module.css";
+import { API } from "../../../src/server/env.js"
+import { useNavigate } from 'react-router-dom';
 
-const URLREGISTERPOST = "https://turnero-veterinaria-m3-server.vercel.app/users/register";
+const URLREGISTERPOST = `${API}/users/register`;
+const URLLOGIN = `${API}/login`
 
 const Register = () => {
   const initialState = {
@@ -19,6 +22,8 @@ const Register = () => {
   const [form, setForm] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
+
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -40,7 +45,7 @@ const Register = () => {
     });
   };
 
-  const handleOnSubmit = (event) => {
+  const handleOnSubmit = async (event) => {
     event.preventDefault();
 
     const userData = {
@@ -52,16 +57,18 @@ const Register = () => {
       pass: form.pass,
     };
 
-    axios
-      .post(URLREGISTERPOST, userData)
-      .then(({ data }) => {
-        console.log(data);
-        alert("Registro exitoso. Proceda al Loggin");
-        setForm(initialState);
-        setTouched({});
-        setErrors({});
-      })
-      .catch((error) => alert(error.message));
+    try {
+      const response = await axios.post(URLREGISTERPOST, userData);
+      console.log(response.data);
+      alert("Registro exitoso. Proceda al Loggin");
+      navigate('/login');
+      setForm(initialState);
+      setTouched({});
+      setErrors({});
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    }
   };
 
   const handleReset = (event) => {

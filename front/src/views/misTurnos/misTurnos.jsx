@@ -5,9 +5,10 @@ import { useNavigate } from "react-router-dom";
 import { setTurnosUsuario } from "../../redux/userSlice";
 import styles from "./misTurnos.module.css";
 import TarjetaTurno from "../../components/tarjetasTurnos/tarjetaTurno";
+import { API } from "../../../src/server/env.js"
 
-const GETUSERBYID = "https://turnero-veterinaria-m3-server.vercel.app/users/";
-const PUTCANCELTURNO = "https://turnero-veterinaria-m3-server.vercel.app/turnos/cancel/";
+const GETUSERBYID = `${API}/users/`;
+const PUTCANCELTURNO = `${API}/turnos/cancel/`;
 
 const MisTurnos = () => {
   const actualUserId = useSelector(

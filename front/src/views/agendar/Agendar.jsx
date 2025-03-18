@@ -3,8 +3,10 @@ import React, { useEffect, useState } from "react";
 import styles from "./Agendar.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { API } from "../../../src/server/env.js"
 
-const POSTTURNOURL = "https://turnero-veterinaria-m3-server.vercel.app/turnos/agendar";
+const POSTTURNOURL = `${API}/turnos/agendar`;
+
 
 export default function Agendar(props) {
   const navigate = useNavigate();
