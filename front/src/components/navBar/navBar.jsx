@@ -58,14 +58,15 @@ const NavBar = () => {
             <span onClick={handleLogout}>LOGOUT</span>
           </Link>
         ) : (
-          <Link to="/login">
-            <span>LOGGIN</span>
-          </Link>
+          <>
+            <Link to="/login">
+              <span>LOGGIN</span>
+            </Link>
+            <Link to="/register">
+              <span>REGISTER</span>
+            </Link>
+          </>
         )}
-
-        <Link to="/register">
-          <span>REGISTER</span>
-        </Link>
       </div>
     </div>
   );

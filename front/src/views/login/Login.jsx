@@ -46,7 +46,6 @@ const Login = () => {
       .post(URLLOGINPOST, loginData)
       .then(({ data }) => {
         dispatch(setUserData(data));
-        console.log(data);
         alert("Loggin exitoso! Redirigiendo...");
         navigate("/Home");
       })
